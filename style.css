@@ -1,0 +1,161 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --shell: #ddd;
+    --text-color: #8a8a8a;
+    --border-color: #1c1c1c;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+html {
+    overflow: hidden;
+    background-color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin-top: 0;
+    color: var(--white);
+}
+
+p, span {
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+a.active {
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--white);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    padding: 30px;
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 130px;
+}
+
+.sidebar-links a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar-links a:last-of-type {
+    margin-bottom: 0;
+}
+
+.sidebar p {
+    margin-bottom: 0;
+}
+
+.sidebar-footer a {
+    margin-right: 7px;
+}
+
+.button:hover {
+    box-shadow: 0 10px 30px 0px rgba(0,0,0,0);
+}
+
+nav a:last-of-type {
+    margin: 0;
+}
+
+.logo-container {
+    transition: opacity .5s ease, transform .5s ease;
+    display: flex;
+    align-content: center;
+}
+
+.logo-container img {
+    height: 55px;
+    margin-right: 20px;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--shell);
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 350px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 30px
+}
+
+.main-body {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+/* Scrollbars */
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-color) var(--black);
+}
+
+.main-body::-webkit-scrollbar-track {
+    scrollbar-color: var(--black);
+}
+
+.main-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.main-body::-webkit-scrollbar-thumb {
+    background-color: var(--text-color);
+    border-radius: 6px;
+    transition: background-color .2s ease;
+}
+
+/* Divider */
+
+.divider {
+    width: 100%;
+    margin: 25px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Mobile */
+@media (max-width: 950px) {
+    /* todo */
+}

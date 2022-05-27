@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="show-english">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Prometheus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="imgs/logo-prometheus.svg" alt="Logo">
+        <h1>Prometheus</h1>
+      </div>
+      <div class="sidebar-links">
+        <a href="#home" data-tab="home" class="nav-tab active">Soon</a>
+      </div>
+      <div class="sidebar-footer">
+        <a href="https://twitter.com/prometheusprj" target="_blank">Twitter</a>
+        <a href="https://github.com/Prometheus-Research-Inc" target="_blank">Github</a>
+        <p>© Prometheus Research Inc., 2022</p>
+      </div>
+    </div>
+
+    <!-- Mint -->
+    <section class="main-container">
+      <div id="home" class="main-body active">
+        <h1>Soon</h1>
+      </div>
+    </section>
+
+  </body>
+
+  <script>
+
+    'use strict';
+
+    function Tabs() {
+      var bindAll = function() {
+        var menuElements = document.querySelectorAll('[data-tab]');
+        for(var i = 0; i < menuElements.length ; i++) {
+          menuElements[i].addEventListener('click', change, false);
+        }
+      }
+
+      var clear = function() {
+        var menuElements = document.querySelectorAll('[data-tab]');
+        for(var i = 0; i < menuElements.length ; i++) {
+          menuElements[i].classList.remove('active');
+          var id = menuElements[i].getAttribute('data-tab');
+          document.getElementById(id).classList.remove('active');
+        }
+      }
+
+      var change = function(e) {
+        clear();
+        e.target.classList.add('active');
+        var id = e.currentTarget.getAttribute('data-tab');
+        document.getElementById(id).classList.add('active');
+      }
+
+      bindAll();
+    }
+
+    var connectTabs = new Tabs();
+  </script>
+</html>
