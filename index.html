@@ -33,6 +33,28 @@
       </div>
     </div>
 
+    <div class="dimmer"></div>
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="imgs/logo-prometheus.svg" alt="Logo">
+        <h1>Prometheus Research</h1>
+      </div>
+      <img src="imgs/icon-menu.svg" class="mobile-menu-btn open" onClick="toggleMenu()">
+      <img src="imgs/icon-arrow.svg" class="mobile-menu-btn close" onClick="toggleMenu()">
+      <div class="menu">
+        <div class="sidebar-links">
+          <a href="/" class="nav-tab active">The Fire Rises</a>
+        </div>
+        <div class="sidebar-footer">
+          <a href="https://twitter.com/prometheusprj" target="_blank">Twitter</a>
+          <a href="https://github.com/Prometheus-Research-Inc" target="_blank">Github</a>
+          <a href="/careers.html">Careers</a>
+          <a href="/contact.html">Contact</a>
+          <p>© Prometheus Research Inc., 2022</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Mint -->
     <section class="main-container">
       <div id="home" class="main-body active">
@@ -56,35 +78,11 @@
 
   <script>
 
-    'use strict';
-
-    function Tabs() {
-      var bindAll = function() {
-        var menuElements = document.querySelectorAll('[data-tab]');
-        for(var i = 0; i < menuElements.length ; i++) {
-          menuElements[i].addEventListener('click', change, false);
-        }
-      }
-
-      var clear = function() {
-        var menuElements = document.querySelectorAll('[data-tab]');
-        for(var i = 0; i < menuElements.length ; i++) {
-          menuElements[i].classList.remove('active');
-          var id = menuElements[i].getAttribute('data-tab');
-          document.getElementById(id).classList.remove('active');
-        }
-      }
-
-      var change = function(e) {
-        clear();
-        e.target.classList.add('active');
-        var id = e.currentTarget.getAttribute('data-tab');
-        document.getElementById(id).classList.add('active');
-      }
-
-      bindAll();
+    // Menu toggle
+    function toggleMenu() {
+        var html = document.querySelector('html');
+        html.classList.toggle('menu-on');
     }
-
-    var connectTabs = new Tabs();
+  
   </script>
 </html>
