@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white);
 }
 
-p, span {
+p, span, li {
     line-height: 28px;
 }
 
