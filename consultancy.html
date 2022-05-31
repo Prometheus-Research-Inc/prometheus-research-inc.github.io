@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="show-english">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Prometheus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+
+    <div class="dimmer"></div>
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="imgs/logo-prometheus.svg" alt="Logo">
+        <h1>Prometheus - Consultancy</h1>
+      </div>
+      <img src="imgs/icon-menu.svg" class="mobile-menu-btn open" onClick="toggleMenu()">
+      <img src="imgs/icon-arrow.svg" class="mobile-menu-btn close" onClick="toggleMenu()">
+      <div class="menu">
+        <div class="sidebar-links">
+          <a href="/" class="nav-tab active">The Fire Rises</a>
+          <a href="/consultancy.html" class="nav-tab active">Apprenticeship Consultancy</a>
+        </div>
+        <div class="sidebar-footer">
+          <a href="https://twitter.com/prometheusprj" target="_blank">Twitter</a>
+          <a href="https://github.com/Prometheus-Research-Inc" target="_blank">Github</a>
+          <a href="https://discord.gg/wwbkhJTZwy">Discord</a>
+          <p>© Prometheus Research Inc., 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mint -->
+    <section class="main-container">
+      <div id="home" class="main-body active">
+        <h1>Apprenticeship-Based Consultancy</h1>
+        <p>After learning about the bare bones of a language used for developing software for the EVM (such as Solidity or Vyper), many an enthusiastic developer has fallen by the wayside after realising that despite knowing - for example - the difference between `calldata` and `memory`, how modifiers work, interfacing with existing contracts, they are not certain what to do next.</p>
+        <p>Common pieces of advice given to these newcomers typically falls into a few buckets, such as:</p>
+        <ul>
+          <li>"Go and fork Uniswap, play with some of the parameters",</li>
+          <li>"Go and explore/solve the Ethernauts contracts",</li>
+          <li>"Go attend a bootcamp or finishing school such as Secureum or Macro", or</li>
+          <li>"Go and read a couple of audit reports from top-tier organisations"</li>
+        </ul>
+        <p>We note that all of this advice is well-intended, the resources that they point to are incredibly informative and highly recommended, and this style of learning is particularly effective for a particular type of learner.</p>
+        <p>An education such as this often comes in the form of presenting completed contracts and either asking how you could break them, highlighting that "this is a way in which you could do such-and-such a thing", or pointing out post-facto issues with code along with their remedies. Heavy focus is often placed upon quickly acquiring a significant amount of academic knowledge through videos, articles or lectures. In some cases, students are encouraged to write projects themselves, but mostly in service of completing an exam.</p>
+        <h3>We're of the related-but-parallel opinion that programming for blockchains is fundamentally something that is learned by doing.</h3>
+        <p>You need to be shouting at your CLI. You need to be baffled by a revert that just will not go away. You need to accidentally brick everyone's testnet balances - at least twice.</p>
+        <p>Most importantly, you need guidance from someone that has gone through all of this before.</p>
+        <p>There is a <b>lot</b> of work that DAOs and private clients alike have on the backburner, primarily because their developers are stretched to capacity. They haven't got the time to pick up a junior developer and train them in the specific things that they need to be done, as it would often take them less time to just do it themselves. This is work that is useful <i>today</i>, stretches across multiple levels of complexity, and can be used to build up the confidence (and resume!) of those that work on it.</p>
+        <p>So: you're going to help them do that work. You're going to learn what's on the cutting-edge and get paid to do it. You're going to be part of an experiment in open-source education.</p>
+        <p>Interested?</p>
+        <p>We'll have more for you soon.</p>
+      </div>
+    </section>
+
+  </body>
+
+  <script>
+
+    // Menu toggle
+    function toggleMenu() {
+        var html = document.querySelector('html');
+        html.classList.toggle('menu-on');
+    }
+  
+  </script>
+</html>
