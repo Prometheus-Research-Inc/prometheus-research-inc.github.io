@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="show-english">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <title>Prometheus - External Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+
+    <div class="dimmer"></div>
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="imgs/logo-prometheus.svg" alt="Logo">
+        <h1>Prometheus</h1>
+      </div>
+      <img src="imgs/icon-menu.svg" class="mobile-menu-btn open" onClick="toggleMenu()">
+      <img src="imgs/icon-arrow.svg" class="mobile-menu-btn close" onClick="toggleMenu()">
+      <div class="menu">
+        <div class="sidebar-links">
+          <a href="/" class="nav-tab active">The Fire Rises</a>
+          <a href="/consultancy.html" class="nav-tab active">Apprenticeship Consultancy</a>
+          <a href="/resources.html" class="nav-tab active">External Resources</a>
+        </div>
+        <div class="sidebar-footer">
+          <a href="https://twitter.com/prometheusprj" target="_blank">Twitter</a>
+          <a href="https://github.com/Prometheus-Research-Inc" target="_blank">Github</a>
+          <a href="https://discord.gg/wwbkhJTZwy">Discord</a>
+          <p>© Prometheus Research Inc., 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mint -->
+    <section class="main-container">
+      <div id="home" class="main-body active">
+        <h1>External Resources</h1>
+        <p>While Prometheus is busy stealing fire from Mount Olympus, we strongly encourage you to familiarise yourselves with the following excellent websites and courses that exist already: you may find something in here that speaks to you as a student or teaches you something you didn't know.</p>
+        <p>At present these resources are purely Ethereum/EVM oriented: we will expand this to include platforms such as StarkNet, Solana et al going forward.</p>
+        
+        
+        <h3>Information & Guidance</h3>
+        <ul>
+          <li><b><a href="https://pentacle.xyz/">Pentacle</a></b>: Information overload causes confusion and doubt. And there's only so far technology can go to protect people from fraud, scams and risky investing. Pentacle's aim is to help people in their quest for knowledge - as a talisman of protection.</li>
+          <li><b><a href="https://devpill.me/">DevPill.Me</a></b>: A public good blockchain development guide aimed at becoming the go-to learning resource aggregator for building on Ethereum and its wider ecosystem of scaling solutions and applications.</li>
+        </ul>
+        
+        <h3>Introductory Tools & Courses</h3>
+        <ul>
+          <li><b><a href="https://cryptozombies.io/">CryptoZombies</a></b>: An interactive school that teaches you all things technical about blockchains. Learn to make smart contracts in Solidity by making your own crypto-collectibles game. <b>Highly</b> recommended as a first step on your Solidity journey.</li>
+          <li><b><a href="https://ethernaut.openzeppelin.com/">Ethernaut</a></b>: A Web3/Solidity based wargame inspired on overthewire.org, played in the EVM. Each level is a smart contract that needs to be 'hacked'.</li>
+          <li><b><a href="https://eth.build/">Eth.Build</a></b>: A drag-and-drop, open-source sandbox environment for visually understanding <i>how</i> Ethereum works.</li>
+        </ul>
+        
+        <h3>Bootcamps & Finishing Schools</h3>
+        <ul>
+          <li><b><a href="https://www.secureum.xyz/epoch0">Secureum</a></b>: A 3-month long intense bootcamp meant primarily for participants who want to get into smart contract security auditing as a part/full time profession.</li>
+          <li><b><a href="https://0xmacro.com/engineering-fellowship">Macro</a></b>: Learn Solidity security and best practices from engineers who have worked on & audited billion-dollar crypto protocols.}</li>
+          <li><b><a href="https://www.artemis.education">Artemis</a></b>: A comprehensive 8 week bootcamp that covers everything from fundamentals to dApp development for Web3 students, designed by Web3 veterans.</li>
+        </ul>
+        
+        <h3>Core References</h3>
+        <ul>
+          <li><b><a href="https://ethereum.org/en/developers/docs/">Ethereum Development Documentation</a></b>: documentation designed to help you build with Ethereum. It covers Ethereum as a concept, explains the Ethereum tech stack, and documents advanced topics for more complex applications and use cases.</li>
+        </ul>
+      </div>
+    </section>
+
+  </body>
+
+  <script>
+
+    // Menu toggle
+    function toggleMenu() {
+        var html = document.querySelector('html');
+        html.classList.toggle('menu-on');
+    }
+  
+  </script>
+</html>
