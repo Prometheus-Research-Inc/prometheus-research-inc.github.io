@@ -95,7 +95,6 @@ a.active {
     flex-direction: column;
     position: absolute;
     top: 150px;
-    padding-left: 13px;
 }
 
 .sidebar-links a {
